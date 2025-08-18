@@ -117,6 +117,8 @@
   "cmake.ignoreCMakeListsMissing": true,
   "C_Cpp_Runner.msvcBatchPath": "",
   "clangd.arguments": [
+
     "--compile-commands-dir=/private/tmp/ITS-BRD-VSC/Programs/TestNewFont/out/TestNewFont/ITSboard/Debug"
+
   ]
 }
