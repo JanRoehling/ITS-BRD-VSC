@@ -147,7 +147,9 @@ Das Arm Keil Studio Pack installiert die folgenden empfohlenen Erweiterungen fü
 
 # Anleitung zum Auschecken eines GitHub-Projekts in VS Code
 
+
 Folgen Sie diesen Schritten, um das GitHub-Projekt mit der URL "https://github.com/Transport-Protocol/ITS-BRD-VSC/ITS-BRD-VSC.git" in Visual Studio Code auszuchecken:
+
 
 1. Öffnen Sie Visual Studio Code.
 
@@ -155,8 +157,10 @@ Folgen Sie diesen Schritten, um das GitHub-Projekt mit der URL "https://github.c
 
 3. Geben Sie "Git: Clone" in die Befehlspalette ein und wählen Sie den Befehl "Git: Clone" aus. Wenn dort "Git: Clone" nicht erscheint, muss erst git installiert werden.
 
+
 4. Geben Sie die URL des GitHub-Repositorys ein: `https://github.com/Transport-Protocol/ITS-BRD-VSC.git` ein.
 (Wenn Sie die GitHub Erweiterung installiert haben, können Sie das Projekt auch  mit ITS-BRD/ITS-BRD clonen )
+
 
 5. Wählen Sie einen Ordner auf Ihrem lokalen Computer aus, in den das Repository geklont werden soll. ( In diesem Ordner wird der Ordner ITS-BRD-VSC angelegt. Dort werden alle notwendigen Dateien hinein kopiert )
 
@@ -168,8 +172,10 @@ Folgen Sie diesen Schritten, um das GitHub-Projekt mit der URL "https://github.c
 
 ### Nur für die Integration (für das VS Praktikum)
 
+
 1. Klicken Sie in der unteren linken Ecke des VS Code-Fensters auf den aktuellen Branch-Namen (standardmäßig `main`). Dadurch öffnet sich die Branch-Liste.
 2. Suchen Sie in der Branch-Liste nach dem Branch `(aus der Vorlesung)`. Wenn der Branch nicht in der Liste angezeigt wird, klicken Sie auf "Alle Branches abrufen", um die aktuelle Liste der Remote-Branches abzurufen.
+
 
 ### Submodule initieren
 

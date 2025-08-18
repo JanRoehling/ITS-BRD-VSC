@@ -10,26 +10,28 @@
 #include <arm_compat.h>
 
 #include "LCD_GUI.h"
+
 #include "stm32f4xx_hal.h"
 #include <stdint.h>
 
 #include "LCD_GUI.h"
-#include "LCD_Touch.h"
+
 
 #include "lcd.h"
 
 #include "led.h"
 #include "lwip_interface.h"
 
+#include "lwip/apps/lwiperf.h"
+#include "lcd/iperf_gui.h"
 
-
+#define IPERF_EXCLUSIVE 0 // 1: exclusive iperf mode, 0: non-exclusive iperf mode
 extern void initITSboard(void);
 
 /* Definitionen */
-#define TASK_COUNT 3
 /* Enumeration für den Zustand der Statemaschine */
-typedef enum { STATE_ETHERNET_FRAME_PULL, STATE_TASK1, STATE_TASK2, STATE_IDLE } State_t;
-
+typedef enum { STATE_ETHERNET_FRAME_PULL, STATE_TASK1, STATE_TASK2, STATE_IPERF, STATE_IDLE } State_t;
+#define TASK_COUNT STATE_IDLE
 /* Struktur für eine Task */
 typedef struct {
   void (*taskFunction)(void); // Funktionspointer zur Task
@@ -42,6 +44,7 @@ typedef struct {
 void TASK_ETHERNET_FRAME_PULL(void);
 void Task1(void);
 void Task2(void);
+void IPERF(void);
 void Scheduler(void);
 void StateMachine(void);
 
@@ -49,28 +52,50 @@ void StateMachine(void);
 State_t currentState = STATE_IDLE;
 uint32_t currentTime = 0; // Simulierte Zeitvariable
 Task_t taskList[TASK_COUNT] = {
-    {TASK_ETHERNET_FRAME_PULL, 0, 10, true}, 
-    {Task1, 0, 100, true}, 
-    {Task2, 0, 200, true}
-
+    [STATE_ETHERNET_FRAME_PULL]={TASK_ETHERNET_FRAME_PULL, 0, 1, true}, 
+    [STATE_TASK1]              ={Task1, 0, 100, false}, 
+    [STATE_TASK2]              ={Task2, 0, 200, false},
+    [STATE_IPERF]              ={IPERF, 0, 1000, true}   
 };
 
 int main(void) {
   initITSboard(); // Initialisierung des ITS Boards
 
   GUI_init(DEFAULT_BRIGHTNESS); // Initialisierung des LCD Boards mit Touch
-  TP_Init(false);               // Initialisierung des LCD Boards mit Touch
 
   // Begruessungstext
-  lcdPrintlnS("LWIP-project");
+  lcdPrintlnS("LWIP IPerf Server");
 
-  // initialisiere den Stack 
+  // *********************** Setup ************************
+  // Initialisiere den Stack 
   init_lwip_stack();
-
   // Setup Interface
   netif_config();
   
-  // Test in Endlosschleife
+  // ********************* INIT APPS **********************
+  if(taskList[STATE_IPERF].isEnabled){
+    
+    display_static_info_iperf();
+    display_dynamic_info_iperf();
+    /**
+    Idee des Callbacks für die Messung
+    void (*callback_func_ptr)(void *arg, enum lwiperf_report_type report_type,
+                            const ip_addr_t* local_addr, u16_t local_port,
+                            const ip_addr_t* remote_addr, u16_t remote_port,
+                            u32_t bytes_transferred, u32_t ms_duration,
+                            u32_t bandwidth_kbitpsec);
+    callback_func_ptr = lwiperf_report;
+    */
+    
+    // Initialisieren des Funktionszeigers mit der Adresse von lwiperf_report
+    lwiperf_start_tcp_server_default(lwiperf_report, NULL);
+    // If we run iperf exclusively, we need to run only the iperf task in the main loop
+    while (IPERF_EXCLUSIVE) {
+      taskList[STATE_ETHERNET_FRAME_PULL].taskFunction();
+    }
+  }
+
+  // Alle Task in Endlosschleife
   while (1) {
     Scheduler();    // Aufruf des Schedulers in der Endlosschleife
     StateMachine(); // Aufruf der Statemaschine
@@ -92,6 +117,9 @@ void StateMachine(void) {
   case STATE_IDLE:
     // Im IDLE-Zustand keine spezifische Aktion
     break;
+  case STATE_IPERF:
+    currentState = STATE_IDLE;
+    break;  
   default:
     // Fehlerbehandlung für unbekannte Zustände
     currentState = STATE_IDLE;
@@ -136,6 +164,11 @@ void Task2(void) {
   // Kommentar: Diese Task toggelt die LED2
   toggleGPIO(&led_pins[2]);
   currentState = STATE_TASK2;
+}
+/* Task IPERF - Measurement*/
+void IPERF(void){
+  toggleGPIO(&led_pins[3]);
+  currentState = STATE_IPERF; 
 }
 
 /* Erweiterungshinweis:
