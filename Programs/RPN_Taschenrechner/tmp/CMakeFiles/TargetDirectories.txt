@@ -1,0 +1,8 @@
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/CMakeFiles/database.dir
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/CMakeFiles/RPN_Taschenrechner.Debug+ITSboard.dir
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/CMakeFiles/RPN_Taschenrechner.Debug+ITSboard-build.dir
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/CMakeFiles/RPN_Taschenrechner.Debug+ITSboard-configure.dir
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/CMakeFiles/RPN_Taschenrechner.Debug+ITSboard-executes.dir
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/CMakeFiles/RPN_Taschenrechner.Debug+ITSboard-database.dir
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/CMakeFiles/edit_cache.dir
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/CMakeFiles/rebuild_cache.dir

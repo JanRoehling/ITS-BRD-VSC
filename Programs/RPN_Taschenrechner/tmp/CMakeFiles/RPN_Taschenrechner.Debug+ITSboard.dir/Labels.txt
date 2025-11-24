@@ -1,0 +1,16 @@
+# Target labels
+ RPN_Taschenrechner.Debug+ITSboard
+# Source files and their labels
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/CMakeFiles/RPN_Taschenrechner.Debug+ITSboard
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/CMakeFiles/RPN_Taschenrechner.Debug+ITSboard.rule
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/CMakeFiles/RPN_Taschenrechner.Debug+ITSboard-complete.rule
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/RPN_Taschenrechner.Debug+ITSboard/src/RPN_Taschenrechner.Debug+ITSboard-stamp/RPN_Taschenrechner.Debug+ITSboard-build.rule
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/RPN_Taschenrechner.Debug+ITSboard/src/RPN_Taschenrechner.Debug+ITSboard-stamp/RPN_Taschenrechner.Debug+ITSboard-configure.rule
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/RPN_Taschenrechner.Debug+ITSboard/src/RPN_Taschenrechner.Debug+ITSboard-stamp/RPN_Taschenrechner.Debug+ITSboard-database.rule
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/RPN_Taschenrechner.Debug+ITSboard/src/RPN_Taschenrechner.Debug+ITSboard-stamp/RPN_Taschenrechner.Debug+ITSboard-download.rule
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/RPN_Taschenrechner.Debug+ITSboard/src/RPN_Taschenrechner.Debug+ITSboard-stamp/RPN_Taschenrechner.Debug+ITSboard-executes.rule
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/RPN_Taschenrechner.Debug+ITSboard/src/RPN_Taschenrechner.Debug+ITSboard-stamp/RPN_Taschenrechner.Debug+ITSboard-install.rule
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/RPN_Taschenrechner.Debug+ITSboard/src/RPN_Taschenrechner.Debug+ITSboard-stamp/RPN_Taschenrechner.Debug+ITSboard-mkdir.rule
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/RPN_Taschenrechner.Debug+ITSboard/src/RPN_Taschenrechner.Debug+ITSboard-stamp/RPN_Taschenrechner.Debug+ITSboard-patch.rule
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/RPN_Taschenrechner.Debug+ITSboard/src/RPN_Taschenrechner.Debug+ITSboard-stamp/RPN_Taschenrechner.Debug+ITSboard-test.rule
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/RPN_Taschenrechner.Debug+ITSboard/src/RPN_Taschenrechner.Debug+ITSboard-stamp/RPN_Taschenrechner.Debug+ITSboard-update.rule

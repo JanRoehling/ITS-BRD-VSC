@@ -1,0 +1,8 @@
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/TestNewFont/tmp/CMakeFiles/database.dir
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/TestNewFont/tmp/CMakeFiles/TestNewFont.Debug+ITSboard.dir
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/TestNewFont/tmp/CMakeFiles/TestNewFont.Debug+ITSboard-build.dir
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/TestNewFont/tmp/CMakeFiles/TestNewFont.Debug+ITSboard-configure.dir
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/TestNewFont/tmp/CMakeFiles/TestNewFont.Debug+ITSboard-executes.dir
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/TestNewFont/tmp/CMakeFiles/TestNewFont.Debug+ITSboard-database.dir
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/TestNewFont/tmp/CMakeFiles/edit_cache.dir
+D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/TestNewFont/tmp/CMakeFiles/rebuild_cache.dir

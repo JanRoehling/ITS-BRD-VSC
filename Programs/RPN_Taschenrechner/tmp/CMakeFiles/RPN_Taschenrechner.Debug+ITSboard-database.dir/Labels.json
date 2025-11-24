@@ -1,0 +1,37 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/CMakeFiles/RPN_Taschenrechner.Debug+ITSboard-database"
+		},
+		{
+			"file" : "D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/CMakeFiles/RPN_Taschenrechner.Debug+ITSboard-database.rule"
+		},
+		{
+			"file" : "D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/RPN_Taschenrechner.Debug+ITSboard/src/RPN_Taschenrechner.Debug+ITSboard-stamp/RPN_Taschenrechner.Debug+ITSboard-database.rule"
+		},
+		{
+			"file" : "D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/RPN_Taschenrechner.Debug+ITSboard/src/RPN_Taschenrechner.Debug+ITSboard-stamp/RPN_Taschenrechner.Debug+ITSboard-configure.rule"
+		},
+		{
+			"file" : "D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/RPN_Taschenrechner.Debug+ITSboard/src/RPN_Taschenrechner.Debug+ITSboard-stamp/RPN_Taschenrechner.Debug+ITSboard-patch.rule"
+		},
+		{
+			"file" : "D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/RPN_Taschenrechner.Debug+ITSboard/src/RPN_Taschenrechner.Debug+ITSboard-stamp/RPN_Taschenrechner.Debug+ITSboard-update.rule"
+		},
+		{
+			"file" : "D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/RPN_Taschenrechner.Debug+ITSboard/src/RPN_Taschenrechner.Debug+ITSboard-stamp/RPN_Taschenrechner.Debug+ITSboard-download.rule"
+		},
+		{
+			"file" : "D:/Daten/HAW/Git/ITS-BRD-VSC/Programs/RPN_Taschenrechner/tmp/RPN_Taschenrechner.Debug+ITSboard/src/RPN_Taschenrechner.Debug+ITSboard-stamp/RPN_Taschenrechner.Debug+ITSboard-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"RPN_Taschenrechner.Debug+ITSboard"
+		],
+		"name" : "RPN_Taschenrechner.Debug+ITSboard-database"
+	}
+}
